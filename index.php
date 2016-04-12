@@ -9,7 +9,13 @@
 </head>
 <body>
   <div class="container">
-    <div class="header"></div>
+    <div class="header">
+      <div class="headline">
+        <strong class="main_head">Headline</strong>
+        <p class="sub_head">this is the headline</p>
+      </div>
+    </div>
+    <div class="menu"></div>
 
 
   <script src="js/design.js"></script>
