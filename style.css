@@ -33,17 +33,20 @@ body {
 }
 
 .header .headline .main_head {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 .header .headline .sub_head {
-  margin-top: -2em;
+  margin-top: -2rem;
+  margin-left: 2rem;
 }
 
 .menu {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 0px;
+  right-top: 0px;
+  right-color: white;
+  right-font-size: 1.5rem;
   margin-right: 20px;
   margin-top: 20px;
 }
