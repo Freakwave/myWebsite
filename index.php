@@ -16,9 +16,15 @@
         <strong class="main_head">Headline</strong>
         <p class="sub_head">this is the headline</p>
       </div>
-	  <div class="menu"><i class="fa fa-bars"></i></div>
+	  <div class="menu-bars"><i class="fa fa-bars"></i></div>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="animal male">
+          <h2>Carlos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+
+    </div>
 
 
   <script src="js/design.js"></script>

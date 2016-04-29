@@ -21,7 +21,8 @@ $(window).scroll(function(){
   }
 
   $('.header').css({
-    'height' : newHeight+'px'
+    'height' : newHeight+'px',
+    'font-size'	: newSize+'rem'
   });
 
   $('.sub_head').css({
@@ -29,7 +30,6 @@ $(window).scroll(function(){
   });
 
   $('.headline').css({
-    'flex-basis' 	: newWidth+'%',
-    'font-size'	: newSize+'em'
+    'flex-basis' 	: newWidth+'%'
   });
 });
