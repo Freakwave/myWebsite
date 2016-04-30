@@ -54,7 +54,7 @@ body {
 
 .content {
   position: absolute;
-  top: 400px;
+  top: 450px;
 }
 
 .content .animal {
@@ -62,18 +62,24 @@ body {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .content .animal h2 {
   display: none;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .content .animal p {
   display: none;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .content .animal::after {
@@ -81,10 +87,10 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   z-index: 10;
-  background-image: inline-image("img/Mars_symbol.svg");
+  background-image: url("img/Mars_symbol.svg");
   background-size: 100%;
 }
 
@@ -105,13 +111,9 @@ body {
 .content .animal:hover h2 {
   display: block;
   text-align: center;
-  position: relative;
-  z-index: 2;
 }
 
 .content .animal:hover p {
   display: block;
   text-align: center;
-  position: relative;
-  z-index: 2;
 }
