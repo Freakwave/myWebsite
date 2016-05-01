@@ -19,11 +19,10 @@
 	  <div class="menu-bars"><i class="fa fa-bars"></i></div>
     </div>
     <div class="content">
-      <div class="animal male">
-          <h2>Carlos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-      </div>
-
+      <figure class="animal male">
+        <img src="img/dog1.jpg" alt="" />
+        <figcaption>Carlos</figcaption>
+      </figure>
     </div>
 
 

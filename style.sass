@@ -56,27 +56,35 @@ body
 
 
   .animal
-    background:
-      image: url(img/dog1.jpg)
     border-radius: 50%
-    height: 200px
-    width: 200px
+    height: 150px
+    width: 150px
     overflow: hidden
-    transition: all 0.3s ease-in-out
+    margin: 0
+    padding: 0
 
-    h2
-      display: none
-      margin: 0
-      padding: 15px 0
-      position: relative
-      z-index: 2
 
-    p
-      display: none
-      margin: 0
-      padding: 0
-      position: relative
-      z-index: 2
+    &:hover
+      img
+        transform: scale(1.2)
+
+    img
+      height: 100%
+      width: 100%
+      transform: scale(1)
+      transition: all 0.3s ease-in-out
+
+    figcaption
+      position: absolute
+      top: 80%
+      display: block
+      background-color: dimgrey
+      width: 100%
+      transform: rotate(-10deg)
+      color: white
+      padding: 0 5px
+
+  .male
     &::after
       content: ""
       position: absolute
@@ -88,20 +96,3 @@ body
       background:
         image: url('img/Mars_symbol.svg')
         size: 100%
-
-    &:hover
-      color: white
-      &::before
-        content: ""
-        background-color: black
-        width: 100%
-        height: 100%
-        position: absolute
-        opacity: 0.6
-        border-radius: 50%
-      h2
-        display: block
-        text-align: center
-      p
-        display: block
-        text-align: center
