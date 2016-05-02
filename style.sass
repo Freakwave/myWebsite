@@ -1,6 +1,29 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins)
-$headerHeight : 400px
+$headerHeight : 50vh
 
+$break-small: 420px
+$break-medium: 690px
+$break-large: 960px
+
+=respond-to($media)
+  @if $media == small-screens
+    @media only screen and (max-width: $break-small)
+      @content
+
+  @else if $media == medium-screens
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-medium - 1)
+      @content
+
+  @else if $media == large-screens
+    @media only screen and (min-width: $break-medium + 1) and (max-width: $break-large - 1)
+      @content
+
+  @else if $media == wide-screens
+    @media only screen and (min-width: $break-large)
+      @content
+
+*
+  box-sizing: border-box
 
 body
   padding: 0
@@ -11,10 +34,10 @@ body
 
 .container
   overflow: hidden
-  width: 100%
   background-color: #ddd
   margin-bottom: 200px
   height: 2000px
+  width: 100%
 
 .header
   background:
@@ -29,6 +52,7 @@ body
   justify-content: center
   display: flex
   z-index: 999
+  box-shadow: 0 2px 5px
 
   .headline
     display: block
@@ -52,17 +76,35 @@ body
 
 .content
   position: absolute
-  top: $headerHeight+50px
+  top: $headerHeight
+  width: 100%
+  max-width: 1280px
+  margin-top: 50px
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
 
 
   .animal
-    border-radius: 50%
-    height: 150px
-    width: 150px
-    overflow: hidden
-    margin: 0
+    margin: auto
     padding: 0
+    position: relative
+    left: 0
+    right: 0
 
+    +respond-to(wide-screens)
+      height: 150px
+      width: 150px
+    +respond-to(large-screens)
+      height: 120px
+      width: 120px
+    +respond-to(medium-screens)
+      height: 120px
+      width: 120px
+    +respond-to(small-screens)
+      height: 120px
+      width: 120px
 
     &:hover
       img
@@ -71,6 +113,7 @@ body
     img
       height: 100%
       width: 100%
+      border-radius: 50%
       transform: scale(1)
       transition: all 0.3s ease-in-out
 
@@ -84,6 +127,10 @@ body
       color: white
       padding: 0 5px
 
+  .modal
+    z-index: 1000
+    position: fixed
+
   .male
     &::after
       content: ""
@@ -96,3 +143,68 @@ body
       background:
         image: url('img/Mars_symbol.svg')
         size: 100%
+
+  .animal-modal
+    position: fixed
+    height: 100%
+    width: 100%
+    background-color: black
+    top: 0
+    left: 0
+    margin: 0
+    padding: 0
+    z-index: 999
+    opacity: 0.9
+
+.col
+  float: left
+  padding: 10px
+  margin: 0
+
++respond-to(wide-screens)
+  .col-xl1
+    width: 100%
+  .col-xl2
+    width: 50%
+  .col-xl3
+    width: 33.33%
+  .col-xl4
+    width: 25%
+  .col-xl5
+    width: 20%
+
++respond-to(large-screens)
+  .col-l1
+    width: 100%
+  .col-l2
+    width: 50%
+  .col-l3
+    width: 33.33%
+  .col-l4
+    width: 25%
+  .col-l5
+    width: 20%
+
++respond-to(medium-screens)
+  .col-m1
+    width: 100%
+  .col-m2
+    width: 50%
+  .col-m3
+    width: 33.33%
+  .col-m4
+    width: 25%
+  .col-m5
+    width: 20%
+
++respond-to(small-screens)
+  .col-s1
+    width: 100%
+  .col-s2
+    width: 50%
+  .col-s3
+    width: 33.33%
+  .col-s4
+    width: 25%
+  .col-s5
+    width: 20%

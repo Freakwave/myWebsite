@@ -19,10 +19,81 @@
 	  <div class="menu-bars"><i class="fa fa-bars"></i></div>
     </div>
     <div class="content">
-      <figure class="animal male">
-        <img src="img/dog1.jpg" alt="" />
-        <figcaption>Carlos</figcaption>
-      </figure>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+        <div class="animal-modal">
+          test
+        </div>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
+      <div class="col col-xl4 col-l4 col-m3 col-s2">
+        <figure class="animal male">
+          <img src="img/dog1.jpg" alt="" />
+          <figcaption>Carlos</figcaption>
+        </figure>
+      </div>
     </div>
 
 

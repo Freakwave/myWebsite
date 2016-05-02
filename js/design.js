@@ -1,9 +1,24 @@
+$('.animal-modal').css({
+  'display': 'none'
+});
+
+$('.animal').click(function(){
+  $(this).siblings('.animal-modal').first().toggle();
+  $(this).toggleClass('modal');
+});
+
+$('.animal-modal').click(function(){
+  $(this).toggle();
+  $(this).siblings('.animal').first().toggleClass('modal');
+});
+
 $(window).scroll(function(){
   var scroll = $(this).scrollTop();
   var newOpacity;
   var newWidth;
   var newSize;
-  var newHeight = Math.max(50, (400-scroll));
+  var wHeight = $( window ).height() / 2;
+  var newHeight = Math.max(50, (wHeight-scroll));
 
   if (newHeight <= 300){
     newOpacity = Math.max(0, (newHeight-200)/100);
