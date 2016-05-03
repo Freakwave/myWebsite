@@ -4,12 +4,13 @@ $('.animal-modal').css({
 
 $('.animal').click(function(){
   $(this).siblings('.animal-modal').first().toggle();
-  $(this).toggleClass('modal');
+  $(this).siblings('.animal-form').first().fadeToggle();
 });
 
 $('.animal-modal').click(function(){
-  $(this).toggle();
-  $(this).siblings('.animal').first().toggleClass('modal');
+  $(this).siblings('.animal-form').first().fadeToggle("fast", function() {
+    $(this).siblings('.animal-modal').first().toggle();
+  });
 });
 
 $(window).scroll(function(){

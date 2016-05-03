@@ -24,8 +24,8 @@
           <img src="img/dog1.jpg" alt="" />
           <figcaption>Carlos</figcaption>
         </figure>
-        <div class="animal-modal">
-          test
+        <div class="animal-modal"></div>
+        <div class="animal-form">
         </div>
       </div>
       <div class="col col-xl4 col-l4 col-m3 col-s2">
